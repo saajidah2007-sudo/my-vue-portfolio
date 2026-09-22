@@ -54,7 +54,6 @@
 
         <button type="submit" class="submit-btn">
           Send Message
-          <span>↗</span>
         </button>
       </form>
     </div>

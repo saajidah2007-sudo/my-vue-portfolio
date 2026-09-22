@@ -67,7 +67,6 @@ const scrollTo = (section) => {
             @click="scrollTo('projects')"
           >
             View My Work
-            <span>↗</span>
           </button>
 
           <button
