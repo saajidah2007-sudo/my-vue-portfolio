@@ -1,4 +1,10 @@
 /* =========================================
+   GOOGLE FONT
+========================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* =========================================
    RESET
 ========================================= */
 
@@ -13,9 +19,14 @@ html {
 }
 
 body {
+  min-width: 320px;
+  min-height: 100vh;
+
   font-family: "Poppins", sans-serif;
+
   background: #0b0b0b;
   color: #f5f5f5;
+
   overflow-x: hidden;
 }
 
@@ -33,11 +44,14 @@ a {
   color: inherit;
 }
 
+img {
+  max-width: 100%;
+}
+
 ::selection {
   background: #c9a86a;
   color: #0b0b0b;
 }
-
 
 /* =========================================
    LOADER
@@ -85,7 +99,6 @@ a {
   color: #c9a86a;
 
   font-size: 0.85rem;
-
   letter-spacing: 0.35em;
 
   margin-left: 0.35em;
@@ -128,7 +141,6 @@ a {
   }
 }
 
-
 /* =========================================
    HEADER / NAVIGATION
 ========================================= */
@@ -153,9 +165,9 @@ a {
 
 .navbar {
   width: min(1400px, 90%);
-  margin: 0 auto;
-
   min-height: 76px;
+
+  margin: 0 auto;
 
   display: flex;
   align-items: center;
@@ -181,8 +193,7 @@ a {
 .logo:hover {
   transform: scale(1.08);
 
-  text-shadow:
-    0 0 20px rgba(201, 168, 106, 0.5);
+  text-shadow: 0 0 20px rgba(201, 168, 106, 0.5);
 }
 
 .nav-links {
@@ -275,7 +286,6 @@ a {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-
 /* =========================================
    HERO
 ========================================= */
@@ -292,12 +302,11 @@ a {
 
   overflow: hidden;
 
-  background:
-    linear-gradient(
-      180deg,
-      rgba(10, 8, 6, 0.96),
-      rgba(20, 16, 12, 0.96)
-    );
+  background: linear-gradient(
+    180deg,
+    rgba(10, 8, 6, 0.96),
+    rgba(20, 16, 12, 0.96)
+  );
 }
 
 .hero::after {
@@ -313,7 +322,6 @@ a {
 
 .animated-bg {
   position: absolute;
-
   inset: 0;
 
   background:
@@ -332,11 +340,7 @@ a {
       rgba(255, 239, 190, 0.08),
       transparent 28%
     ),
-    linear-gradient(
-      135deg,
-      rgba(212, 175, 55, 0.06),
-      rgba(255, 255, 255, 0.01)
-    );
+    linear-gradient(135deg, rgba(212, 175, 55, 0.06), rgba(255, 255, 255, 0.01));
 
   background-size:
     220% 220%,
@@ -351,19 +355,11 @@ a {
 
 .hero-grid {
   position: absolute;
-
   inset: 0;
 
   background-image:
-    linear-gradient(
-      rgba(201, 168, 106, 0.035) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(201, 168, 106, 0.035) 1px,
-      transparent 1px
-    );
+    linear-gradient(rgba(201, 168, 106, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 168, 106, 0.035) 1px, transparent 1px);
 
   background-size: 70px 70px;
 
@@ -378,7 +374,6 @@ a {
 
 .hero-content {
   position: relative;
-
   z-index: 2;
 
   width: min(1200px, 100%);
@@ -426,14 +421,7 @@ a {
 .hero-info h1 span {
   display: block;
 
-  background:
-    linear-gradient(
-      90deg,
-      #d4af37,
-      #f5d76e,
-      #fff2b2,
-      #d4af37
-    );
+  background: linear-gradient(90deg, #d4af37, #f5d76e, #fff2b2, #d4af37);
 
   background-size: 200%;
 
@@ -451,7 +439,6 @@ a {
 
 .hero-role {
   display: flex;
-
   align-items: center;
 
   gap: 12px;
@@ -461,7 +448,6 @@ a {
   color: #c9a86a;
 
   font-size: 1.05rem;
-
   font-weight: 500;
 
   margin-bottom: 20px;
@@ -480,7 +466,6 @@ a {
   color: #cfcfcf;
 
   font-size: 1rem !important;
-
   line-height: 1.9 !important;
 
   margin-bottom: 32px;
@@ -503,7 +488,6 @@ a {
   padding: 13px 24px;
 
   font-weight: 600;
-
   font-size: 0.9rem;
 
   transition:
@@ -523,8 +507,7 @@ a {
 .gold-button:hover {
   transform: translateY(-3px);
 
-  box-shadow:
-    0 10px 30px rgba(201, 168, 106, 0.25);
+  box-shadow: 0 10px 30px rgba(201, 168, 106, 0.25);
 }
 
 .outline-button {
@@ -545,7 +528,6 @@ a {
 
 .hero-image-wrapper {
   position: relative;
-
   flex-shrink: 0;
 
   animation: fadeUp 1s 0.2s ease both;
@@ -553,7 +535,6 @@ a {
 
 .hero-image {
   position: relative;
-
   z-index: 2;
 }
 
@@ -613,7 +594,6 @@ a {
   bottom: 30px;
 
   display: flex;
-
   align-items: center;
 
   gap: 10px;
@@ -628,8 +608,7 @@ a {
 
   backdrop-filter: blur(10px);
 
-  box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 
   animation: floating 4s ease-in-out infinite;
 }
@@ -641,15 +620,12 @@ a {
 
 .floating-card strong {
   color: #f5f5f5;
-
   font-size: 0.75rem;
 }
 
 .floating-card small {
   color: #9d9d9d;
-
   font-size: 0.65rem;
-
   margin-top: 3px;
 }
 
@@ -661,8 +637,7 @@ a {
 
   border-radius: 50%;
 
-  box-shadow:
-    0 0 12px rgba(201, 168, 106, 0.7);
+  box-shadow: 0 0 12px rgba(201, 168, 106, 0.7);
 }
 
 .scroll-indicator {
@@ -678,7 +653,6 @@ a {
   display: flex;
 
   flex-direction: column;
-
   align-items: center;
 
   gap: 8px;
@@ -694,15 +668,10 @@ a {
   width: 1px;
   height: 35px;
 
-  background: linear-gradient(
-    to bottom,
-    #c9a86a,
-    transparent
-  );
+  background: linear-gradient(to bottom, #c9a86a, transparent);
 
   animation: scrollLine 1.8s ease-in-out infinite;
 }
-
 
 /* =========================================
    GENERAL SECTIONS
@@ -726,7 +695,6 @@ section {
   text-align: center;
 
   font-size: 0.7rem;
-
   font-weight: 600;
 
   letter-spacing: 0.25em;
@@ -745,7 +713,6 @@ section {
 
   font-weight: 600;
 }
-
 
 /* =========================================
    ABOUT
@@ -768,12 +735,11 @@ section {
 
   padding: 50px;
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(201, 168, 106, 0.06),
-      rgba(255, 255, 255, 0.015)
-    );
+  background: linear-gradient(
+    135deg,
+    rgba(201, 168, 106, 0.06),
+    rgba(255, 255, 255, 0.015)
+  );
 
   border: 1px solid rgba(201, 168, 106, 0.12);
 
@@ -826,9 +792,8 @@ section {
   font-size: 0.75rem;
 }
 
-
 /* =========================================
-   PROJECTS
+   PROJECTS SECTION
 ========================================= */
 
 .projects-section {
@@ -845,15 +810,16 @@ section {
   color: #999;
 
   line-height: 1.8;
-}
 
+  font-size: 0.9rem;
+}
 
 /* =========================================
    FEATURED PROJECTS
 ========================================= */
 
 .featured-projects {
-  width: min(1100px, 100%);
+  width: min(1150px, 100%);
 
   margin: 0 auto;
 
@@ -864,23 +830,26 @@ section {
   gap: 35px;
 }
 
+/* =========================================
+   FEATURED PROJECT CARD
+========================================= */
+
 .featured-project-card {
   position: relative;
 
   display: grid;
 
-  grid-template-columns: 0.9fr 1.1fr;
-
-  min-height: 430px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 
   overflow: hidden;
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(201, 168, 106, 0.07),
-      rgba(255, 255, 255, 0.015)
-    );
+  min-height: 420px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(201, 168, 106, 0.07),
+    rgba(255, 255, 255, 0.015)
+  );
 
   border: 1px solid rgba(201, 168, 106, 0.2);
 
@@ -897,10 +866,8 @@ section {
 
   border-color: rgba(201, 168, 106, 0.55);
 
-  box-shadow:
-    0 25px 60px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
 }
-
 
 /* =========================================
    FEATURED PROJECT IMAGE
@@ -909,38 +876,100 @@ section {
 .featured-project-image {
   position: relative;
 
-  min-height: 430px;
+  min-width: 0;
+  min-height: 100%;
+
+  display: flex;
+
+  align-items: stretch;
+  justify-content: stretch;
+
+  padding: 0;
+
+  background: #101010;
 
   overflow: hidden;
-
-  background: #111;
 }
+
+.featured-project-image::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(
+    circle at center,
+    rgba(201, 168, 106, 0.07),
+    transparent 65%
+  );
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+/* =========================================
+   FEATURED PROJECT IMAGE WRAPPER
+========================================= */
 
 .featured-project-image .project-image {
-  width: 100%;
-  height: 100%;
-}
+  position: relative;
 
-.featured-project-image .project-image img {
+  z-index: 1;
+
   width: 100%;
   height: 100%;
+
+  min-height: 420px;
+
   display: block;
-  object-fit: contain;
-  background: #111;
-  padding: 15px;
-  transition: transform 0.6s ease;
+
+  overflow: hidden;
 }
 
-.featured-project-card:hover
+/* =========================================
+   FEATURED PROJECT SCREENSHOT
+========================================= */
+
 .featured-project-image .project-image img {
-  transform: scale(1.02);
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  max-width: none;
+  max-height: none;
+
+  object-fit: cover;
+  object-position: center;
+
+  border: none;
+  border-radius: 0;
+
+  box-shadow: none;
+
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
 }
+
+.featured-project-card:hover .featured-project-image .project-image img {
+  transform: scale(1.025);
+
+  filter: brightness(1.03);
+}
+
+/* =========================================
+   FEATURED PROJECT PLACEHOLDER
+========================================= */
 
 .project-image-placeholder {
-  width: 100%;
-  height: 100%;
+  position: relative;
 
-  min-height: 430px;
+  z-index: 1;
+
+  width: 100%;
+  min-height: 420px;
 
   display: flex;
 
@@ -950,66 +979,107 @@ section {
   background:
     radial-gradient(
       circle at center,
-      rgba(201, 168, 106, 0.12),
+      rgba(201, 168, 106, 0.13),
       transparent 55%
     ),
     #111;
+
+  border: none;
+
+  border-radius: 0;
 }
 
-.project-image-placeholder span {
-  color: rgba(201, 168, 106, 0.5);
+.placeholder-content {
+  display: flex;
 
-  font-size: 0.7rem;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.placeholder-number {
+  margin-bottom: 10px;
+
+  color: rgba(201, 168, 106, 0.45);
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 2.5rem;
+
+  line-height: 1;
+}
+
+.placeholder-content strong {
+  color: #c9a86a;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 1.25rem;
+
+  font-weight: 500;
+}
+
+.placeholder-content small {
+  margin-top: 8px;
+
+  color: #555;
+
+  font-size: 0.6rem;
 
   font-weight: 600;
 
   letter-spacing: 0.2em;
 }
 
-.featured-project-image::after {
-  content: "";
-
-  position: absolute;
-
-  inset: 0;
-
-  pointer-events: none;
-
-  background:
-    linear-gradient(
-      to right,
-      transparent 60%,
-      rgba(11, 11, 11, 0.35)
-    );
-}
+/* =========================================
+   PROJECT NUMBER
+========================================= */
 
 .featured-project-image .project-number {
+  position: absolute;
+
+  z-index: 3;
+
   top: 20px;
   right: 20px;
 
   width: 44px;
   height: 44px;
 
-  background: rgba(11, 11, 11, 0.85);
+  display: flex;
 
-  border-color: rgba(201, 168, 106, 0.6);
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(11, 11, 11, 0.9);
+
+  border: 1px solid rgba(201, 168, 106, 0.6);
+
+  color: #c9a86a;
 
   font-size: 0.75rem;
-}
 
+  backdrop-filter: blur(6px);
+}
 
 /* =========================================
    FEATURED PROJECT CONTENT
 ========================================= */
 
 .featured-project-content {
+  min-width: 0;
+
   display: flex;
 
   flex-direction: column;
-
   justify-content: center;
 
-  padding: 45px;
+  padding: 42px;
 }
 
 .featured-project-label {
@@ -1039,13 +1109,12 @@ section {
 .featured-description {
   color: #aaa;
 
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 
   line-height: 1.8;
 
   margin-bottom: 25px;
 }
-
 
 /* =========================================
    DEMO LOGIN
@@ -1078,7 +1147,7 @@ section {
 .login-details {
   display: grid;
 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 
   gap: 15px;
 }
@@ -1105,7 +1174,6 @@ section {
   word-break: break-word;
 }
 
-
 /* =========================================
    BOOKING NOTE
 ========================================= */
@@ -1124,6 +1192,8 @@ section {
   background: rgba(201, 168, 106, 0.04);
 
   border-left: 2px solid #c9a86a;
+
+  border-radius: 0 6px 6px 0;
 }
 
 .booking-note span {
@@ -1146,7 +1216,6 @@ section {
   line-height: 1.5;
 }
 
-
 /* =========================================
    FEATURED PROJECT BUTTONS
 ========================================= */
@@ -1154,7 +1223,7 @@ section {
 .featured-project-buttons {
   display: grid;
 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 
   gap: 10px;
 
@@ -1165,9 +1234,8 @@ section {
   min-height: 44px;
 }
 
-
 /* =========================================
-   MINI PROJECTS
+   MINI PROJECTS HEADING
 ========================================= */
 
 .mini-projects-heading {
@@ -1194,11 +1262,6 @@ section {
   line-height: 1.8;
 }
 
-.mini-project-cards {
-  margin-top: 0;
-}
-
-
 /* =========================================
    MINI PROJECT CARDS
 ========================================= */
@@ -1210,8 +1273,7 @@ section {
 
   display: grid;
 
-  grid-template-columns:
-    repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 
   gap: 25px;
 }
@@ -1222,6 +1284,8 @@ section {
   display: flex;
 
   flex-direction: column;
+
+  min-width: 0;
 
   overflow: hidden;
 
@@ -1242,16 +1306,23 @@ section {
 
   border-color: rgba(201, 168, 106, 0.5);
 
-  box-shadow:
-    0 18px 45px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.3);
 }
+
+/* Mini project image */
 
 .project-card .project-image {
   position: relative;
+
   overflow: hidden;
+
+  width: 100%;
   height: 230px;
+
   background: #111;
+
   display: flex;
+
   align-items: center;
   justify-content: center;
 }
@@ -1263,25 +1334,29 @@ section {
 
   inset: 0;
 
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.45),
-    transparent 50%
-  );
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 55%);
+
+  pointer-events: none;
 }
 
 .project-card .project-image img {
   width: 100%;
   height: 100%;
+
   display: block;
+
   object-fit: cover;
+
   object-position: center;
+
   transition: transform 0.5s ease;
 }
 
 .project-card:hover .project-image img {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
+
+/* Mini project number */
 
 .project-card .project-number {
   position: absolute;
@@ -1301,14 +1376,20 @@ section {
 
   border-radius: 50%;
 
-  background: rgba(11, 11, 11, 0.8);
+  background: rgba(11, 11, 11, 0.82);
 
   border: 1px solid rgba(201, 168, 106, 0.5);
 
   color: #c9a86a;
 
   font-size: 0.7rem;
+
+  backdrop-filter: blur(6px);
 }
+
+/* =========================================
+   MINI PROJECT CONTENT
+========================================= */
 
 .project-content {
   display: flex;
@@ -1327,6 +1408,8 @@ section {
 
   font-size: 1.35rem;
 
+  line-height: 1.25;
+
   margin-bottom: 12px;
 }
 
@@ -1339,6 +1422,10 @@ section {
 
   margin-bottom: 18px;
 }
+
+/* =========================================
+   TECHNOLOGIES
+========================================= */
 
 .technologies {
   display: flex;
@@ -1362,8 +1449,9 @@ section {
   color: #c9a86a;
 
   font-size: 0.68rem;
-}
 
+  font-weight: 500;
+}
 
 /* =========================================
    PROJECT BUTTONS
@@ -1372,7 +1460,7 @@ section {
 .project-btns {
   display: grid;
 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 
   gap: 10px;
 
@@ -1399,6 +1487,8 @@ section {
 
   text-decoration: none;
 
+  text-align: center;
+
   font-size: 0.76rem;
 
   font-weight: 600;
@@ -1422,8 +1512,7 @@ section {
 
   color: #f5d889;
 
-  box-shadow:
-    0 8px 20px rgba(201, 168, 106, 0.08);
+  box-shadow: 0 8px 20px rgba(201, 168, 106, 0.08);
 }
 
 .project-link.filled {
@@ -1441,10 +1530,8 @@ section {
 
   border-color: #d4af37;
 
-  box-shadow:
-    0 8px 22px rgba(201, 168, 106, 0.2);
+  box-shadow: 0 8px 22px rgba(201, 168, 106, 0.2);
 }
-
 
 /* =========================================
    SKILLS
@@ -1480,7 +1567,6 @@ section {
 
 .progress {
   width: 100%;
-
   height: 10px;
 
   overflow: hidden;
@@ -1495,13 +1581,7 @@ section {
 
   width: var(--target-width);
 
-  background:
-    linear-gradient(
-      90deg,
-      #9e7b38,
-      #c9a86a,
-      #ead28d
-    );
+  background: linear-gradient(90deg, #9e7b38, #c9a86a, #ead28d);
 
   border-radius: inherit;
 
@@ -1511,11 +1591,7 @@ section {
 }
 
 .progress-bar.highlighted {
-  filter:
-    brightness(1.25)
-    drop-shadow(
-      0 0 8px rgba(201, 168, 106, 0.35)
-    );
+  filter: brightness(1.25) drop-shadow(0 0 8px rgba(201, 168, 106, 0.35));
 }
 
 .skills-note {
@@ -1541,7 +1617,6 @@ section {
     width: var(--target-width);
   }
 }
-
 
 /* =========================================
    JOURNEY
@@ -1636,7 +1711,6 @@ section {
   line-height: 1.7;
 }
 
-
 /* =========================================
    CONTACT
 ========================================= */
@@ -1674,8 +1748,7 @@ section {
 
   border-radius: 16px;
 
-  box-shadow:
-    0 20px 50px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
 }
 
 .form-group {
@@ -1729,8 +1802,7 @@ section {
 
   background: #202020;
 
-  box-shadow:
-    0 0 0 3px rgba(201, 168, 106, 0.06);
+  box-shadow: 0 0 0 3px rgba(201, 168, 106, 0.06);
 }
 
 .contact-form textarea {
@@ -1738,7 +1810,6 @@ section {
 
   resize: vertical;
 }
-
 
 /* =========================================
    CONTACT SUBMIT BUTTON
@@ -1776,8 +1847,7 @@ section {
 
   background: #d4af37;
 
-  box-shadow:
-    0 10px 25px rgba(201, 168, 106, 0.2);
+  box-shadow: 0 10px 25px rgba(201, 168, 106, 0.2);
 }
 
 .submit-btn:active {
@@ -1805,8 +1875,7 @@ section {
 
   display: grid;
 
-  grid-template-columns:
-    repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 
   gap: 18px;
 }
@@ -1872,7 +1941,6 @@ section {
   font-size: 0.7rem;
 }
 
-
 /* =========================================
    FOOTER
 ========================================= */
@@ -1913,7 +1981,6 @@ section {
   font-size: 0.7rem;
 }
 
-
 /* =========================================
    BACK TO TOP
 ========================================= */
@@ -1946,7 +2013,8 @@ section {
 
   transition:
     transform 0.3s ease,
-    background 0.3s ease;
+    background 0.3s ease,
+    color 0.3s ease;
 }
 
 .back-to-top:hover {
@@ -1957,6 +2025,10 @@ section {
   color: #0b0b0b;
 }
 
+/* =========================================
+   VUE TRANSITIONS
+========================================= */
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s ease;
@@ -1966,11 +2038,6 @@ section {
 .fade-leave-to {
   opacity: 0;
 }
-
-
-/* =========================================
-   ANIMATIONS
-========================================= */
 
 .role-enter-active,
 .role-leave-active {
@@ -1990,6 +2057,10 @@ section {
 
   transform: translateY(-8px);
 }
+
+/* =========================================
+   ANIMATIONS
+========================================= */
 
 @keyframes floatBackground {
   0% {
@@ -2082,14 +2153,13 @@ section {
   }
 }
 
-
 /* =========================================
    TABLET
 ========================================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .hero-content {
-    gap: 40px;
+    gap: 45px;
   }
 
   .hero-image img {
@@ -2101,33 +2171,61 @@ section {
     left: -30px;
   }
 
-  .cards {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-  }
-
   .featured-project-card {
-    grid-template-columns: 1fr;
-  }
-
-  .featured-project-image {
-    min-height: 360px;
-  }
-
-  .project-image-placeholder {
-    min-height: 360px;
+    grid-template-columns:
+      minmax(0, 0.95fr)
+      minmax(0, 1.05fr);
   }
 
   .featured-project-content {
     padding: 35px;
   }
 
+  .featured-project-image .project-image,
+  .project-image-placeholder {
+    min-height: 380px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .contact-links {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
+/* =========================================
+   TABLET / SMALL LAPTOP
+========================================= */
+
+@media (max-width: 900px) {
+  .featured-project-card {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+  }
+
+  .featured-project-image {
+    min-height: 340px;
+  }
+
+  .featured-project-image .project-image {
+    min-height: 340px;
+  }
+
+  .featured-project-image .project-image img {
+    object-fit: cover;
+  }
+
+  .project-image-placeholder {
+    min-height: 340px;
+  }
+
+  .featured-project-content {
+    padding: 35px;
+  }
+}
 
 /* =========================================
    MOBILE
@@ -2212,12 +2310,12 @@ section {
     bottom: 4px;
   }
 
+  /* HERO */
+
   .hero {
     min-height: auto;
 
-    padding:
-      75px 5%
-      90px;
+    padding: 75px 5% 90px;
   }
 
   .hero-content {
@@ -2244,7 +2342,6 @@ section {
 
   .hero-description {
     margin-left: auto;
-
     margin-right: auto;
 
     font-size: 0.9rem !important;
@@ -2258,7 +2355,6 @@ section {
 
   .hero-image img {
     width: 230px;
-
     height: 290px;
   }
 
@@ -2282,9 +2378,13 @@ section {
     display: none;
   }
 
+  /* GENERAL */
+
   .section-heading {
     margin-bottom: 45px;
   }
+
+  /* ABOUT */
 
   .about-container {
     grid-template-columns: 1fr;
@@ -2304,25 +2404,37 @@ section {
     justify-content: center;
   }
 
-  .cards {
-    grid-template-columns: 1fr;
+  /* FEATURED PROJECTS */
+
+  .featured-projects {
+    gap: 25px;
   }
 
-  .project-image {
-    height: 210px;
-  }
-
-  /* Featured project mobile layout */
   .featured-project-card {
     grid-template-columns: 1fr;
+
+    border-radius: 16px;
   }
 
   .featured-project-image {
-    min-height: 300px;
+    min-height: 290px;
+
+    padding: 0;
+  }
+
+  .featured-project-image .project-image {
+    min-height: 290px;
+  }
+
+  .featured-project-image .project-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
   }
 
   .project-image-placeholder {
-    min-height: 300px;
+    min-height: 290px;
   }
 
   .featured-project-content {
@@ -2333,6 +2445,10 @@ section {
     font-size: 2rem;
   }
 
+  .featured-description {
+    font-size: 0.85rem;
+  }
+
   .featured-project-buttons {
     grid-template-columns: 1fr;
   }
@@ -2341,13 +2457,24 @@ section {
     grid-template-columns: 1fr;
   }
 
+  /* MINI PROJECTS */
+
   .mini-projects-heading {
     margin-top: 80px;
   }
 
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card .project-image {
+    height: 220px;
+  }
+
+  /* JOURNEY */
+
   .timeline-card {
-    grid-template-columns:
-      65px 20px 1fr;
+    grid-template-columns: 65px 20px 1fr;
 
     gap: 10px;
 
@@ -2366,6 +2493,8 @@ section {
     font-size: 0.75rem;
   }
 
+  /* CONTACT */
+
   .contact-links {
     grid-template-columns: 1fr;
   }
@@ -2374,25 +2503,26 @@ section {
     padding: 25px 20px;
   }
 
+  /* BACK TO TOP */
+
   .back-to-top {
     right: 18px;
-
     bottom: 18px;
 
     width: 40px;
-
     height: 40px;
   }
 }
-
 
 /* =========================================
    SMALL MOBILE
 ========================================= */
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .hero-buttons {
     flex-direction: column;
+
+    width: 100%;
   }
 
   .gold-button,
@@ -2402,12 +2532,64 @@ section {
 
   .hero-image img {
     width: 200px;
-
     height: 255px;
   }
 
   .floating-card {
     left: -5px;
+  }
+
+  /* FEATURED PROJECT */
+
+  .featured-project-image {
+    min-height: 250px;
+
+    padding: 0;
+  }
+
+  .featured-project-image .project-image {
+    min-height: 250px;
+  }
+
+  .featured-project-image .project-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  .project-image-placeholder {
+    min-height: 250px;
+  }
+
+  .featured-project-content {
+    padding: 25px 20px;
+  }
+
+  .featured-project-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .featured-description {
+    font-size: 0.82rem;
+  }
+
+  .booking-note {
+    align-items: flex-start;
+  }
+
+  .featured-project-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  /* MINI PROJECTS */
+
+  .project-card .project-image {
+    height: 205px;
+  }
+
+  .project-content {
+    padding: 22px 20px;
   }
 
   .project-btns {
@@ -2418,27 +2600,61 @@ section {
     width: 100%;
   }
 
-  .featured-project-content {
-    padding: 25px 20px;
-  }
+  /* CONTACT */
 
-  .featured-project-image {
-    min-height: 250px;
-  }
-
-  .project-image-placeholder {
-    min-height: 250px;
-  }
-
-  .featured-project-content h3 {
-    font-size: 1.8rem;
-  }
-
-  .booking-note {
-    align-items: flex-start;
+  .contact-form {
+    padding: 22px 18px;
   }
 }
 
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+  .logo {
+    font-size: 1.15rem;
+  }
+
+  .hero-info h1 {
+    font-size: 2.6rem;
+  }
+
+  .featured-project-image {
+    min-height: 220px;
+  }
+
+  .featured-project-image .project-image {
+    min-height: 220px;
+  }
+
+  .featured-project-image .project-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  .project-image-placeholder {
+    min-height: 220px;
+  }
+
+  .featured-project-content {
+    padding: 22px 17px;
+  }
+
+  .featured-project-content h3 {
+    font-size: 1.6rem;
+  }
+
+  .demo-login {
+    padding: 14px;
+  }
+
+  .login-details strong {
+    font-size: 0.68rem;
+  }
+}
 
 /* =========================================
    REDUCED MOTION
