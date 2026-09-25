@@ -4,7 +4,7 @@ const featuredProjects = [
     title: "HRFlow",
     category: "Human Resources Management System",
     description:
-      "HRFlow was a group project developed for ModernTech Solutions. It is a full-stack Human Resources Management System designed to bring employee management, attendance, leave, payroll, performance, reports, and system settings into one platform.",
+      "HRFlow was a group project we built for ModernTech Solutions. We created a full-stack HR system that brings different HR tasks into one place, including employee management, attendance, leave, payroll, performance, reports, and system settings.",
 
     image: "https://i.ibb.co/0jFNyY1b/hr-flow.png",
 
@@ -26,7 +26,7 @@ const featuredProjects = [
     title: "RentoSphere",
     category: "Rental Marketplace",
     description:
-      "RentoSphere was a group e-commerce project developed with Matthew, Lisekho, and Purrity. The platform allows owners to list items for rent while renters can browse listings, request rentals, manage bookings, and receive booking confirmations.",
+      "RentoSphere was a group project I worked on with Matthew, Lisekho, and Purrity. We built a rental marketplace where users can list items, browse available products, make rental requests, and manage their bookings. This project also gave me more experience working with Vue, Node.js, Express, and MySQL as part of a team.",
 
     image: "https://i.ibb.co/W4LrDP9x/Screenshot-2026-09-23-093017.png",
 
@@ -37,7 +37,7 @@ const featuredProjects = [
 
     number: "02",
 
-    bookingNote: "Renter account required for booking.",
+    bookingNote: "A renter account is needed to make a booking.",
   },
 ];
 
@@ -45,7 +45,7 @@ const miniProjects = [
   {
     title: "Responsive Image Gallery",
     description:
-      "A responsive image gallery built while practising CSS layouts, spacing, responsive design, and image presentation.",
+      "One of the projects I worked on while getting more comfortable with CSS. I focused on creating a clean image layout that adjusts to different screen sizes.",
 
     technologies: ["HTML", "CSS"],
 
@@ -59,7 +59,7 @@ const miniProjects = [
   {
     title: "Product Showcase Page",
     description:
-      "A product-focused webpage created to practise page structure, styling, layout, and responsive design using HTML and CSS.",
+      "A simple product page I built to practise working with HTML and CSS. It helped me get more comfortable with page structure, layouts, spacing, and responsive design.",
 
     technologies: ["HTML", "CSS"],
 
@@ -73,7 +73,7 @@ const miniProjects = [
   {
     title: "Bootstrap Store Website",
     description:
-      "A small store website built while learning Bootstrap components, responsive layouts, navigation, cards, and page styling.",
+      "A small store website I built while learning Bootstrap. I used it to practise working with Bootstrap components, cards, navigation, and responsive layouts.",
 
     technologies: ["HTML", "CSS", "Bootstrap"],
 
@@ -88,17 +88,19 @@ const miniProjects = [
 
 <template>
   <section id="projects" class="projects-section">
+    <!-- SECTION INTRO -->
     <div class="section-heading projects-heading">
-      <span class="section-eyebrow">MY WORK</span>
+      <span class="section-eyebrow">MY PROJECTS</span>
 
       <h2>
-        Projects I've
-        <span>Built</span>
+        What I've
+        <span>Worked On</span>
       </h2>
 
       <p>
-        A selection of projects I've worked on while building my skills in
-        front-end and full-stack development.
+        These are some of the projects I've worked on while learning web
+        development. They include both group projects and smaller projects
+        that helped me build up my skills.
       </p>
     </div>
 
@@ -144,7 +146,7 @@ const miniProjects = [
           </div>
         </div>
 
-        <!-- PROJECT INFORMATION -->
+        <!-- PROJECT DETAILS -->
         <div class="featured-project-content">
           <div class="featured-label">
             <span></span>
@@ -171,7 +173,10 @@ const miniProjects = [
 
           <!-- TECHNOLOGIES -->
           <div class="featured-technologies">
-            <span v-for="technology in project.technologies" :key="technology">
+            <span
+              v-for="technology in project.technologies"
+              :key="technology"
+            >
               {{ technology }}
             </span>
           </div>
@@ -194,7 +199,10 @@ const miniProjects = [
           </div>
 
           <!-- RENTOSPHERE BOOKING NOTE -->
-          <div v-if="project.bookingNote" class="project-info-box booking-box">
+          <div
+            v-if="project.bookingNote"
+            class="project-info-box booking-box"
+          >
             <span class="booking-dot"></span>
 
             <p>{{ project.bookingNote }}</p>
@@ -252,14 +260,14 @@ const miniProjects = [
 
     <div class="other-projects-heading">
       <div>
-        <span class="section-eyebrow">MORE WORK</span>
+        <span class="section-eyebrow">MORE PROJECTS</span>
 
-        <h3>Smaller Projects</h3>
+        <h3>Some Earlier Work</h3>
       </div>
 
       <p>
-        Smaller projects that helped me practise the fundamentals and experiment
-        with different layouts and technologies.
+        A few of the smaller projects I worked on while building my
+        foundation in HTML, CSS, and Bootstrap.
       </p>
     </div>
 
@@ -294,7 +302,10 @@ const miniProjects = [
           </p>
 
           <div class="project-technologies">
-            <span v-for="technology in project.technologies" :key="technology">
+            <span
+              v-for="technology in project.technologies"
+              :key="technology"
+            >
               {{ technology }}
             </span>
           </div>

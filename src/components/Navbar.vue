@@ -51,14 +51,7 @@ onUnmounted(() => {
 <template>
   <header class="site-header">
     <nav class="navbar">
-      <button
-        class="logo"
-        @click="scrollToSection('home')"
-        aria-label="Go to home"
-      >
-        SA
-      </button>
-
+      <!-- MOBILE MENU -->
       <button
         class="mobile-toggle"
         :class="{ open: menuOpen }"
@@ -71,6 +64,7 @@ onUnmounted(() => {
         <span></span>
       </button>
 
+      <!-- NAVIGATION -->
       <ul class="nav-links" :class="{ open: menuOpen }">
         <li v-for="section in sections" :key="section.id">
           <button

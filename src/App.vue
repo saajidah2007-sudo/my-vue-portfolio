@@ -44,8 +44,10 @@ onUnmounted(() => {
       <div class="loader-ring"></div>
 
       <div class="loader-content">
-        <span>SA</span>
+        <span class="loader-symbol">✦</span>
+
         <h1>WELCOME</h1>
+
         <p>Loading portfolio...</p>
       </div>
     </div>

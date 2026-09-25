@@ -1,7 +1,12 @@
 <template>
   <section id="about" class="about-section">
+    <!-- SECTION HEADING -->
     <div class="section-heading">
-      <span>01 / ABOUT</span>
+      <span class="about-section-label">
+        <span class="about-sticker">🌙</span>
+        ABOUT ME
+      </span>
+
       <h2>Getting to know me</h2>
     </div>
 
@@ -9,17 +14,13 @@
 
       <!-- LEFT SIDE -->
       <div class="about-intro">
-        <div class="about-number">
-          01
-        </div>
-
         <span class="about-small-label">
-          A little about me
+          A bit about me
         </span>
 
         <h3>
           I'm learning to turn
-          <span>ideas into experiences.</span>
+          <span>ideas into something real.</span>
         </h3>
       </div>
 
@@ -27,59 +28,57 @@
       <div class="about-content">
 
         <p class="about-lead">
-          Hi, I'm Saajidah a developer in the early stages of my journey,
-          with a growing interest in creating websites and applications that
-          are both visually engaging and easy to use.
+          Hi, I'm Saajidah, a developer at the beginning of my journey.
+          I'm interested in building websites and applications that look good,
+          work well and are simple for people to use.
         </p>
 
         <p>
-          I started my coding journey through Life Choices, where I began
-          learning the foundations of web development and gradually moved
-          into building projects with HTML, CSS, JavaScript and Vue.js.
+          I started learning to code through Life Choices, where I was
+          introduced to the basics of web development. Since then, I've
+          worked with HTML, CSS, JavaScript and Vue.js while getting more
+          comfortable with building projects on my own.
         </p>
 
         <p>
-          What I enjoy most about development is seeing an idea come to life.
-          Whether I'm working on a layout, solving a coding problem or
-          building a full-stack project with a team, I enjoy learning through
-          the process and finding better ways to approach things.
+          One of my favourite parts of development is seeing an idea slowly
+          turn into something that actually works. I enjoy figuring things
+          out, fixing problems when my code doesn't work the way I expected,
+          and learning from the projects I build along the way.
         </p>
 
         <!-- FOCUS AREAS -->
         <div class="about-focus">
 
           <div class="about-focus-item">
-            <span class="focus-number">01</span>
-
             <div>
               <h4>Creative Development</h4>
+
               <p>
-                I enjoy combining design and code to create interfaces that
-                feel visually appealing and easy to navigate.
+                I like bringing design and code together to create websites
+                that feel interesting and are easy to use.
               </p>
             </div>
           </div>
 
           <div class="about-focus-item">
-            <span class="focus-number">02</span>
-
             <div>
               <h4>Always Learning</h4>
+
               <p>
-                I'm constantly building, experimenting and learning new
-                technologies to improve my development skills.
+                I'm still learning, so I'm always experimenting with new
+                tools and technologies and finding ways to improve.
               </p>
             </div>
           </div>
 
           <div class="about-focus-item">
-            <span class="focus-number">03</span>
-
             <div>
-              <h4>Growing Through Projects</h4>
+              <h4>Learning Through Projects</h4>
+
               <p>
-                I learn best by creating real projects and working through
-                challenges rather than only learning the theory.
+                Building real projects has helped me understand development
+                much better than just learning the theory.
               </p>
             </div>
           </div>

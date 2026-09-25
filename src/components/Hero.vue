@@ -4,7 +4,7 @@ import { ref, onMounted, onUnmounted } from "vue";
 const roles = [
   "Aspiring Front-End Developer",
   "Web Development Learner",
-  "Creative Problem Solver",
+  "Building & Learning",
 ];
 
 const currentRole = ref(roles[0]);
@@ -56,9 +56,9 @@ const scrollTo = (section) => {
         </div>
 
         <p class="hero-description">
-          I'm passionate about creating clean, responsive websites and
-          continuously improving my development skills through real projects,
-          experimentation and hands-on learning.
+          I enjoy building websites, trying out new ideas, and learning
+          through real projects. I'm still growing as a developer, but
+          every project gives me a chance to improve and learn something new.
         </p>
 
         <div class="hero-buttons">

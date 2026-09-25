@@ -1,7 +1,7 @@
 <template>
   <section id="contact" class="contact-section">
     <div class="section-heading">
-      <span>05 / CONTACT</span>
+      <span>CONTACT</span>
       <h2>Let's connect</h2>
     </div>
 
@@ -20,8 +20,8 @@
           <label for="name">Name</label>
 
           <input
-            type="text"
             id="name"
+            type="text"
             name="name"
             placeholder="Your name"
             required
@@ -32,8 +32,8 @@
           <label for="email">Email</label>
 
           <input
-            type="email"
             id="email"
+            type="email"
             name="email"
             placeholder="your@email.com"
             required

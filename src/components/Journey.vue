@@ -3,43 +3,46 @@ const journey = [
   {
     year: "2022",
     title: "Curiosity",
-    icon: "🤔",
-    text: "Developed an interest in technology and became curious about how websites and digital experiences are created.",
+    text: "I became interested in technology and started wondering how websites and digital experiences are created.",
   },
   {
     year: "2025",
     title: "Discovering Life Choices",
-    icon: "🧭",
-    text: "Discovered Life Choices and found an opportunity to explore web development and start building a career in tech.",
+    text: "I discovered Life Choices and found an opportunity to explore web development while working towards a career in tech.",
   },
   {
     year: "2026",
     title: "Starting My Coding Journey",
-    icon: "💻",
-    text: "Started my internship journey at Life Choices and began learning the fundamentals of coding, including HTML, CSS, JavaScript, and Python.",
+    text: "I started my internship at Life Choices and began learning the fundamentals of web development, including HTML, CSS, JavaScript, and Python.",
   },
   {
     year: "2026",
     title: "Building & Growing",
-    icon: "💡",
-    text: "Put my skills into practice by building projects and learning technologies such as Vue.js, Node.js, Express.js, and MySQL.",
+    text: "I started putting what I learned into practice through projects and began working with technologies such as Vue.js, Node.js, Express.js, and MySQL.",
   },
 ];
 </script>
 
 <template>
   <section id="journey" class="journey-section">
+
     <div class="section-heading">
       <span>04 / JOURNEY</span>
-      <h2>My learning journey</h2>
+
+      <h2>
+        My learning
+        <span>journey</span>
+      </h2>
     </div>
 
     <div class="timeline">
-      <div
+
+      <article
         v-for="item in journey"
         :key="`${item.year}-${item.title}`"
         class="timeline-card"
       >
+
         <div class="timeline-year">
           {{ item.year }}
         </div>
@@ -49,12 +52,16 @@ const journey = [
         <div class="timeline-content">
           <h3>
             {{ item.title }}
-            <span>{{ item.icon }}</span>
           </h3>
 
-          <p>{{ item.text }}</p>
+          <p>
+            {{ item.text }}
+          </p>
         </div>
-      </div>
+
+      </article>
+
     </div>
+
   </section>
 </template>
