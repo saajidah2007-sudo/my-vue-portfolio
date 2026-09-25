@@ -2,19 +2,17 @@
 const featuredProjects = [
   {
     title: "HRFlow",
+    category: "Human Resources Management System",
     description:
-      "HRFlow was a group project developed for ModernTech Solutions. It is a Human Resources Management System designed to bring different HR processes into one place, including employee management, attendance, leave, payroll, performance, reports, and system settings. We built it using Vue.js, Node.js, Express.js, and MySQL, with each team member responsible for different sections before combining everything into the final system.",
+      "HRFlow was a group project developed for ModernTech Solutions. It is a full-stack Human Resources Management System designed to bring employee management, attendance, leave, payroll, performance, reports, and system settings into one platform.",
 
     image: "https://i.ibb.co/0jFNyY1b/hr-flow.png",
 
-    githubFrontend:
-      "https://github.com/avivarendse/HRflow.git",
+    technologies: ["Vue.js", "Node.js", "Express.js", "MySQL"],
 
-    githubBackend:
-      "https://github.com/Zaarah-Okkers/ModernTech-Backend.git",
-
-    live:
-      "https://hrflow-xg3y.onrender.com/index.html",
+    frontendGithub: "https://github.com/avivarendse/HRflow.git",
+    backendGithub: "https://github.com/Zaarah-Okkers/ModernTech-Backend.git",
+    live: "https://hrflow-xg3y.onrender.com/index.html",
 
     number: "01",
 
@@ -26,372 +24,287 @@ const featuredProjects = [
 
   {
     title: "RentoSphere",
-
+    category: "Rental Marketplace",
     description:
-      "RentoSphere was a group e-commerce project developed with Matthew, Lisekho and Purrity. It is an online rental marketplace that allows people to list items they own and gives others a convenient way to find and rent items they need for a short period of time. The platform includes rental listings, owner applications, listing management, earnings, safety verification, authentication and booking confirmations. We built the project using Vue.js, JavaScript, HTML, CSS, Node.js, Express.js and MySQL, while using Git and GitHub for collaboration.",
+      "RentoSphere was a group e-commerce project developed with Matthew, Lisekho, and Purrity. The platform allows owners to list items for rent while renters can browse listings, request rentals, manage bookings, and receive booking confirmations.",
 
-    /*
-      Add the RentoSphere screenshot URL here when you have it.
-      Leaving this empty prevents the HRFlow screenshot
-      from incorrectly appearing on the RentoSphere card.
-    */
     image: "https://i.ibb.co/W4LrDP9x/Screenshot-2026-09-23-093017.png",
 
-    github:
-      "https://github.com/TaShepsta/E-Commerce-project.git",
+    technologies: ["Vue.js", "JavaScript", "Node.js", "Express.js", "MySQL"],
 
-    live:
-      "https://e-commerce-project-ca0q.onrender.com",
+    github: "https://github.com/TaShepsta/E-Commerce-project.git",
+    live: "https://e-commerce-project-ca0q.onrender.com",
 
     number: "02",
 
-    bookingNote:
-      "Renter account required for booking.",
+    bookingNote: "Renter account required for booking.",
   },
 ];
 
 const miniProjects = [
   {
     title: "Responsive Image Gallery",
-
     description:
-      "A responsive image gallery created to practise CSS layouts, image presentation and responsive design.",
+      "A responsive image gallery built while practising CSS layouts, spacing, responsive design, and image presentation.",
 
     technologies: ["HTML", "CSS"],
 
-    image:
-      "https://i.ibb.co/bjgDY0JY/Screenshot-2026-06-05-112231.png",
+    image: "https://i.ibb.co/bjgDY0JY/Screenshot-2026-06-05-112231.png",
 
-    github:
-      "https://github.com/saajidah2007-sudo/CSS-Excercise-2.git",
+    github: "https://github.com/saajidah2007-sudo/CSS-Excercise-2.git",
 
-    live:
-      "https://image-gallery-css-project.netlify.app/",
-
-    number: "01",
+    live: "https://image-gallery-css-project.netlify.app/",
   },
 
   {
     title: "Product Showcase Page",
-
     description:
-      "A modern product display page created to improve my CSS styling, responsive layouts and visual presentation.",
+      "A product-focused webpage created to practise page structure, styling, layout, and responsive design using HTML and CSS.",
 
     technologies: ["HTML", "CSS"],
 
-    image:
-      "https://i.ibb.co/rGVWdgcH/Screenshot-2026-06-05-115837.png",
+    image: "https://i.ibb.co/rGVWdgcH/Screenshot-2026-06-05-115837.png",
 
-    github:
-      "https://github.com/saajidah2007-sudo/CSS-Exercise-3.git",
+    github: "https://github.com/saajidah2007-sudo/CSS-Exercise-3.git",
 
-    live:
-      "https://product-showcase-css-project.netlify.app/",
-
-    number: "02",
+    live: "https://product-showcase-css-project.netlify.app/",
   },
 
   {
     title: "Bootstrap Store Website",
-
     description:
-      "An e-commerce style website built using Bootstrap, featuring responsive layouts, navigation components and modern design principles.",
+      "A small store website built while learning Bootstrap components, responsive layouts, navigation, cards, and page styling.",
 
     technologies: ["HTML", "CSS", "Bootstrap"],
 
-    image:
-      "https://i.ibb.co/nsJkDQhr/Screenshot-2026-06-05-120132.png",
+    image: "https://i.ibb.co/nsJkDQhr/Screenshot-2026-06-05-120132.png",
 
-    github:
-      "https://github.com/saajidah2007-sudo/CSS-Exercise-4.git",
+    github: "https://github.com/saajidah2007-sudo/CSS-Exercise-4.git",
 
-    live:
-      "https://bootstrap-store-css-project.netlify.app/",
-
-    number: "03",
+    live: "https://bootstrap-store-css-project.netlify.app/",
   },
 ];
 </script>
 
 <template>
   <section id="projects" class="projects-section">
+    <div class="section-heading projects-heading">
+      <span class="section-eyebrow">MY WORK</span>
+
+      <h2>
+        Projects I've
+        <span>Built</span>
+      </h2>
+
+      <p>
+        A selection of projects I've worked on while building my skills in
+        front-end and full-stack development.
+      </p>
+    </div>
 
     <!-- =========================================
          FEATURED PROJECTS
     ========================================== -->
 
-    <div class="section-heading">
-      <span>02 / FEATURED PROJECTS</span>
-
-      <h2>Projects I've worked on</h2>
-    </div>
-
-    <div class="projects-intro">
-      <p>
-        Larger projects I've worked on while developing my skills in
-        front-end and full-stack web development.
-      </p>
-    </div>
-
     <div class="featured-projects">
-
       <article
-        v-for="project in featuredProjects"
-        :key="project.number"
+        v-for="(project, index) in featuredProjects"
+        :key="project.title"
         class="featured-project-card"
+        :class="{ 'featured-project-card-reverse': index % 2 !== 0 }"
       >
-
         <!-- PROJECT IMAGE -->
-
-        <div class="featured-project-image">
-
-          <!-- Actual image -->
-          <div
-            v-if="project.image"
-            class="project-image"
-          >
-            <img
-              :src="project.image"
-              :alt="`${project.title} project preview`"
-            />
+        <div class="featured-project-visual">
+          <div class="project-number">
+            {{ project.number }}
           </div>
 
-          <!-- Placeholder when no image exists -->
-          <div
-            v-else
-            class="project-image-placeholder"
-          >
-            <div class="placeholder-content">
-              <span class="placeholder-number">
-                {{ project.number }}
-              </span>
+          <div class="browser-window">
+            <div class="browser-top">
+              <div class="browser-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
 
-              <strong>{{ project.title }}</strong>
+              <div class="browser-address">
+                <span>{{ project.title.toLowerCase() }}.app</span>
+              </div>
 
-              <small>
-                PROJECT PREVIEW
-              </small>
+              <div class="browser-space"></div>
+            </div>
+
+            <div class="browser-content">
+              <img
+                :src="project.image"
+                :alt="`${project.title} project screenshot`"
+                class="featured-project-screenshot"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT INFORMATION -->
+        <div class="featured-project-content">
+          <div class="featured-label">
+            <span></span>
+            Featured Project
+          </div>
+
+          <div class="featured-project-title-row">
+            <span class="featured-project-index">
+              {{ project.number }}
+            </span>
+
+            <div>
+              <p class="featured-project-category">
+                {{ project.category }}
+              </p>
+
+              <h3>{{ project.title }}</h3>
             </div>
           </div>
 
-          <!-- Project number -->
-          <span class="project-number">
-            {{ project.number }}
-          </span>
-
-        </div>
-
-
-        <!-- PROJECT CONTENT -->
-
-        <div class="featured-project-content">
-
-          <div class="featured-project-label">
-            FEATURED PROJECT
-          </div>
-
-          <h3>
-            {{ project.title }}
-          </h3>
-
-          <p class="featured-description">
+          <p class="featured-project-description">
             {{ project.description }}
           </p>
 
+          <!-- TECHNOLOGIES -->
+          <div class="featured-technologies">
+            <span v-for="technology in project.technologies" :key="technology">
+              {{ technology }}
+            </span>
+          </div>
 
-          <!-- HRFLOW DEMO LOGIN -->
-
-          <div
-            v-if="project.login"
-            class="demo-login"
-          >
-
-            <div class="demo-login-heading">
-              <span>DEMO LOGIN</span>
-            </div>
+          <!-- HRFLOW LOGIN -->
+          <div v-if="project.login" class="project-info-box login-box">
+            <div class="info-box-heading">Demo Login</div>
 
             <div class="login-details">
-
               <div>
-                <small>Username</small>
-
-                <strong>
-                  {{ project.login.username }}
-                </strong>
+                <span>Username</span>
+                <strong>{{ project.login.username }}</strong>
               </div>
 
               <div>
-                <small>Password</small>
-
-                <strong>
-                  {{ project.login.password }}
-                </strong>
+                <span>Password</span>
+                <strong>{{ project.login.password }}</strong>
               </div>
-
             </div>
-
           </div>
-
 
           <!-- RENTOSPHERE BOOKING NOTE -->
+          <div v-if="project.bookingNote" class="project-info-box booking-box">
+            <span class="booking-dot"></span>
 
-          <div
-            v-if="project.bookingNote"
-            class="booking-note"
-          >
-
-            <span>NOTE</span>
-
-            <p>
-              {{ project.bookingNote }}
-            </p>
-
+            <p>{{ project.bookingNote }}</p>
           </div>
 
-
-          <!-- PROJECT LINKS -->
-
-          <div class="featured-project-buttons">
-
-            <!-- HRFlow has two GitHub repositories -->
-            <template v-if="project.githubFrontend">
-
+          <!-- LINKS -->
+          <div class="featured-project-links">
+            <template v-if="project.frontendGithub">
               <a
-                :href="project.githubFrontend"
+                :href="project.frontendGithub"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="project-link"
+                class="project-link project-link-primary"
               >
                 Frontend GitHub
               </a>
 
               <a
-                :href="project.githubBackend"
+                :href="project.backendGithub"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="project-link"
               >
                 Backend GitHub
               </a>
-
             </template>
 
+            <template v-else>
+              <a
+                :href="project.github"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link project-link-primary"
+              >
+                GitHub
+              </a>
+            </template>
 
-            <!-- RentoSphere has one GitHub repository -->
-            <a
-              v-else
-              :href="project.github"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              GitHub
-            </a>
-
-
-            <!-- Live project -->
             <a
               :href="project.live"
               target="_blank"
               rel="noopener noreferrer"
-              class="project-link filled"
+              class="project-link project-link-live"
             >
               Live Demo
             </a>
-
           </div>
-
         </div>
-
       </article>
-
     </div>
 
-
     <!-- =========================================
-         MINI PROJECTS
+         SMALLER PROJECTS
     ========================================== -->
 
-    <div class="mini-projects-heading">
+    <div class="other-projects-heading">
+      <div>
+        <span class="section-eyebrow">MORE WORK</span>
 
-      <div class="section-heading">
-
-        <span>03 / MINI PROJECTS</span>
-
-        <h2>
-          Smaller projects and exercises
-        </h2>
-
+        <h3>Smaller Projects</h3>
       </div>
 
       <p>
-        Smaller projects and exercises I completed while practising
-        different front-end development concepts.
+        Smaller projects that helped me practise the fundamentals and experiment
+        with different layouts and technologies.
       </p>
-
     </div>
 
-
-    <div class="cards mini-project-cards">
-
+    <div class="projects-container">
       <article
         v-for="project in miniProjects"
-        :key="project.number"
+        :key="project.title"
         class="project-card"
       >
+        <!-- IMAGE -->
+        <div class="project-card-image">
+          <div class="mini-browser-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
-        <!-- MINI PROJECT IMAGE -->
-
-        <div class="project-image">
-
-          <img
-            :src="project.image"
-            :alt="`${project.title} project preview`"
-          />
-
-          <span class="project-number">
-            {{ project.number }}
-          </span>
-
+          <div class="mini-project-screen">
+            <img
+              :src="project.image"
+              :alt="`${project.title} project screenshot`"
+            />
+          </div>
         </div>
 
-
-        <!-- MINI PROJECT CONTENT -->
-
-        <div class="project-content">
-
-          <h3>
-            {{ project.title }}
-          </h3>
+        <!-- CONTENT -->
+        <div class="project-card-content">
+          <h4>{{ project.title }}</h4>
 
           <p>
             {{ project.description }}
           </p>
 
-
-          <!-- TECHNOLOGIES -->
-
-          <div class="technologies">
-
-            <span
-              v-for="technology in project.technologies"
-              :key="technology"
-            >
+          <div class="project-technologies">
+            <span v-for="technology in project.technologies" :key="technology">
               {{ technology }}
             </span>
-
           </div>
 
-
-          <!-- LINKS -->
-
-          <div class="project-btns">
-
+          <div class="project-card-links">
             <a
               :href="project.github"
               target="_blank"
               rel="noopener noreferrer"
-              class="project-link"
+              class="mini-project-link"
             >
               GitHub
             </a>
@@ -400,18 +313,13 @@ const miniProjects = [
               :href="project.live"
               target="_blank"
               rel="noopener noreferrer"
-              class="project-link filled"
+              class="mini-project-link mini-project-live"
             >
               Live Demo
             </a>
-
           </div>
-
         </div>
-
       </article>
-
     </div>
-
   </section>
 </template>

@@ -4,25 +4,25 @@ const journey = [
     year: "2022",
     title: "Curiosity",
     icon: "🤔",
-    text: "Developed an interest in technology and websites.",
+    text: "Developed an interest in technology and became curious about how websites and digital experiences are created.",
   },
   {
     year: "2025",
-    title: "Exploration",
+    title: "Discovering Life Choices",
     icon: "🧭",
-    text: "Started learning more about web development.",
-  },
-  {
-    year: "2025",
-    title: "Growth",
-    icon: "💡",
-    text: "Started building projects using HTML, CSS and JavaScript.",
+    text: "Discovered Life Choices and found an opportunity to explore web development and start building a career in tech.",
   },
   {
     year: "2026",
-    title: "Vue",
-    icon: "⚡",
-    text: "Started learning Vue.js and building more structured applications.",
+    title: "Starting My Coding Journey",
+    icon: "💻",
+    text: "Started my internship journey at Life Choices and began learning the fundamentals of coding, including HTML, CSS, JavaScript, and Python.",
+  },
+  {
+    year: "2026",
+    title: "Building & Growing",
+    icon: "💡",
+    text: "Put my skills into practice by building projects and learning technologies such as Vue.js, Node.js, Express.js, and MySQL.",
   },
 ];
 </script>

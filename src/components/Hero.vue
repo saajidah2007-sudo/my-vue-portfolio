@@ -87,15 +87,6 @@ const scrollTo = (section) => {
             alt="Saajidah Abrahams"
           />
         </div>
-
-        <div class="floating-card">
-          <span class="floating-dot"></span>
-
-          <div>
-            <strong>Currently learning</strong>
-            <small>Vue.js & Web Development</small>
-          </div>
-        </div>
       </div>
     </div>
 
